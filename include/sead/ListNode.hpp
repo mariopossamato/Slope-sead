@@ -1,0 +1,3 @@
+#ifndef SEAD_LISTNODE_HPP
+#define SEAD_LISTNODE_HPP
+#endif
