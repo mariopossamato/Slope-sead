@@ -1,6 +1,8 @@
 #include "sead/ListNode.hpp"
 
-void sead::ListNode::insertBack_(sead::ListNode* pListNode) {
+namespace sead {
+
+void ListNode::insertBack_(ListNode* pListNode) {
   this->m_pNext = pListNode;
   pListNode->m_pPrev = this;
   pListNode->m_pNext = this->m_pNext;
@@ -9,7 +11,7 @@ void sead::ListNode::insertBack_(sead::ListNode* pListNode) {
   }
 }
 
-void sead::ListNode::insertFront_(sead::ListNode* pListNode) {
+void ListNode::insertFront_(ListNode* pListNode) {
   this->m_pPrev = pListNode;
   pListNode->m_pPrev = this->m_pPrev;
   pListNode->m_pNext = this;
@@ -18,7 +20,7 @@ void sead::ListNode::insertFront_(sead::ListNode* pListNode) {
   }
 }
 
-void sead::ListNode::erase_() {
+void ListNode::erase_() {
   if (this->m_pPrev) {
     this->m_pPrev->m_pNext = this->m_pNext;
   }
@@ -28,3 +30,5 @@ void sead::ListNode::erase_() {
   this->m_pPrev = nullptr;
   this->m_pNext = nullptr;
 }
+
+} // namespace sead
