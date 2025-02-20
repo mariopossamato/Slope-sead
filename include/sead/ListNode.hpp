@@ -2,6 +2,7 @@
 #define SEAD_LISTNODE_HPP
 
 namespace sead {
+
 class ListNode {
   void insertBack_(ListNode* pListNode);
   void insertFront_(ListNode* pListNode);
@@ -9,6 +10,7 @@ class ListNode {
   ListNode* m_pPrev = nullptr;
   ListNode* m_pNext = nullptr;
 };
+
 } // namespace sead
 
-#endif
+#endif // SEAD_LISTNODE_HPP
