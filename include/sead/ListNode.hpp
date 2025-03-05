@@ -4,11 +4,11 @@
 namespace sead {
 
 class ListNode {
-  void insertBack_(ListNode* pListNode);
-  void insertFront_(ListNode* pListNode);
+  void insertBack_(ListNode* pNode /* node */);
+  void insertFront_(ListNode* pNode /* node */);
   void erase_();
-  ListNode* m_pPrev = nullptr;
-  ListNode* m_pNext = nullptr;
+  ListNode* m_pPrev /* mPrev */ = nullptr;
+  ListNode* m_pNext /* mNext */ = nullptr;
 };
 
 } // namespace sead
